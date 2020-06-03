@@ -1,4 +1,4 @@
-
+//silly code to start practicing the programming language
 
 //ES5:Prototypes
 //ES5: Arrays
