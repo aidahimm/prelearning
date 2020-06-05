@@ -1,3 +1,7 @@
+
+//very trivial
+//will definitely add things and modify later
+
 //class of patients
 class patient{
 	constructor(name, id, covid, cond, age){
