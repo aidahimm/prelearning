@@ -27,7 +27,7 @@ return randomMood;
 }
 
 function rndState(){
-  stateArr = ["Can I just learn this already", "I wanna sleep", "ugh", "I feel like I'm not making progress man"];
+  stateArr = ["I'm fine", "I wanna sleep", "I'm tired", "I want money"];
   randomState = stateArr[Math.floor(Math.random()*stateArr.length)];
   return randomState;
 }
@@ -43,18 +43,18 @@ function createPerson(){
 test.prototype.getAge = function (){
 	//ES6: (let) has block scope, is only recognized in this function and variable will be considered undeclared if used outside of it
   let x = new Date().getFullYear() - this.yob;
-  return `The age is ${x} years old.`;
+  return ` Their age is ${x} years old.`;
 }
 
 test.prototype.getInfo = function(){
   //ES6: use these (``) to be able to concatinate variables and text
-  return `${this.name} who is born in ${this.yob} is ${this.mood}, the mental state is " ${this.state}", and they have ${this.money}$.`;
+  return `${this.name} who is born in ${this.yob} is ${this.mood}, they are saying: " ${this.state}", and they have ${this.money}$.`;
 }
 
 test.prototype. giveMoney = function () {
-  this.donation = Math.floor(Math.random()*10000);
+  this.donation = Math.floor(Math.random()*5000);
   this.money += this.donation;
-  return `Donate ${this.donation}$ ... ${this.name} now has ${this.money}$.`; };
+  return ` Donate ${this.donation}$ ... ${this.name} now has ${this.money}$.`; };
 
 test.prototype.checkMood = function() {
   if(this.money>5000)
